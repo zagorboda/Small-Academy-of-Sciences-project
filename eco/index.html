@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ecology</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+<body>
+
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="" class="active">Головна</a>
+  <a href="news/index.html">Новини</a>
+  <a href="gallery/index.html">Галерея</a>
+  <a href="">Статистика</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<div class="head-w">
+	<div class="head-w1">
+	<h1>Екологія міста Козятин</h1>
+	</div>
+	<!-- <img src="wrapper.jpeg"> -->
+	<div style="font-size: 18px;" >Сайт створено з метою донесення інформаціїї до мешканців міста</div>
+</div>
+
+
+<!-- <div class="slider-wrapper">
+  <div class="slider">
+    <input type="radio" name="slider" class="trigger" id="one" checked="checked" />
+    <div class="slide">
+      <figure class="slide-figure">
+        <img class="slide-img" src="path/to/image-1.jpg" />
+        <figcaption class="slide-caption"><p>...</p></figcaption>
+      </figure>.slide-figure
+    </div>.slide
+    <input type="radio" name="slider" class="trigger" id="two" />
+    <div class="slide">
+      <figure class="slide-figure">
+        <img class="slide-img" src="path/to/image-2.jpg" />
+        <figcaption class="slide-caption"><p>...</p></figcaption>
+      </figure>.slide-figure
+    </div>.slide
+    <input type="radio" name="slider" class="trigger" id="three" />
+    <div class="slide">
+      <figure class="slide-figure">
+        <img class="slide-img" src="path/to/image-3.jpg" />
+        <figcaption class="slide-caption"><p>...</p></figcaption>
+      </figure>.slide-figure
+    </div>.slide
+  </div>.slider
+  <ul class="slider-nav">
+    <li class="slider-nav__item"><label class="slider-nav__label" for="one">1</label></li>
+    <li class="slider-nav__item"><label class="slider-nav__label" for="two">2</label></li>
+    <li class="slider-nav__item"><label class="slider-nav__label" for="three">3</label></li>
+  </ul>.slider-nav
+</div>.slider-wrapper -->
+
+<!-- <div class="slider1">
+	<base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/">
+<div id="slider">
+<figure>
+<img src="austin-fireworks.jpg" alt>
+<img src="taj-mahal_copy.jpg" alt>
+<img src="ibiza.jpg" alt>
+<img src="ankor-wat.jpg" alt>
+<img src="austin-fireworks.jpg" alt>
+</figure>
+</div>
+</div>
+ -->
+
+<div class="slider1">
+<img class="mySlides" src="сажа.jpg" style="width: 60%;">
+<img class="mySlides" src="сміття.jpeg" style="width: 60%;">
+<img class="mySlides" src="рослини.jpeg" style="width: 60%;">
+<img class="mySlides" src="дим.jpeg" style="width: 60%;">
+</div>
+
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  x[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 3000);
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
+
+</body>
+</html>
