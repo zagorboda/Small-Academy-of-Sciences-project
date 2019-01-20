@@ -5,12 +5,16 @@
 	<title>Ecology</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="general.css">
 
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Arial" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Helvetica" rel="stylesheet">
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -25,18 +29,18 @@
 <div id="head-mobile"></div>
 <div class="button"></div>
 <ul>
-<li class='active'><a href='#'>Головна</a>
+<li class='active'><a href=''>Головна</a>
 	<ul>
 		<li><a href="">Загальна екологічна ситуація</a></li>
 		<li><a href="">Проблема твердих побутових відходів</a></li>
 		<li><a href="">Результати діяльності</a></li>
 	</ul>
 </li>
-<li><a href='#'>Новини</a></li>
-<li><a href='#'>Статистика</a>
+<li><a href='news/index.html'>Новини</a></li>
+<li><a href=''>Статистика</a>
 </li>
-<li><a href='#'>Галерея</a></li>
-<li><a href='#'>Контакти</a></li>
+<li><a href=''>Галерея</a></li>
+<li><a href=''>Контакти</a></li>
 </ul>
 </nav>
 </head>
@@ -53,10 +57,10 @@
 </div>
 
   <div class="class1" style="text-align: center;height: 300px;width:600px;margin:auto;">
-    <div><img src="дим.jpeg" style="height: 400px;"></div>
-    <div><img src="рослини.jpeg" style="height: 400px;"></div>
-    <div><img src="сажа.jpg" style="height: 400px;"></div>
-    <div><img src="сміття.jpeg" style="height: 400px;"></div>
+    <div><img src="photo/дим.jpeg" style="height: 400px;"></div>
+    <div><img src="photo/рослини.jpeg" style="height: 400px;"></div>
+    <div><img src="photo/сажа.jpg" style="height: 400px;"></div>
+    <div><img src="photo/сміття.jpeg" style="height: 400px;"></div>
   </div>
 
 <div class="inform">
@@ -92,67 +96,8 @@
 });
   });	
 </script> 
-<script>
-(function($) {
-$.fn.menumaker = function(options) {  
- var cssmenu = $(this), settings = $.extend({
-   format: "dropdown",
-   sticky: false
- }, options);
- return this.each(function() {
-   $(this).find(".button").on('click', function(){
-     $(this).toggleClass('menu-opened');
-     var mainmenu = $(this).next('ul');
-     if (mainmenu.hasClass('open')) { 
-       mainmenu.slideToggle().removeClass('open');
-     }
-     else {
-       mainmenu.slideToggle().addClass('open');
-       if (settings.format === "dropdown") {
-         mainmenu.find('ul').show();
-       }
-     }
-   });
-   cssmenu.find('li ul').parent().addClass('has-sub');
-multiTg = function() {
-     cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
-     cssmenu.find('.submenu-button').on('click', function() {
-       $(this).toggleClass('submenu-opened');
-       if ($(this).siblings('ul').hasClass('open')) {
-         $(this).siblings('ul').removeClass('open').slideToggle();
-       }
-       else {
-         $(this).siblings('ul').addClass('open').slideToggle();
-       }
-     });
-   };
-   if (settings.format === 'multitoggle') multiTg();
-   else cssmenu.addClass('dropdown');
-   if (settings.sticky === true) cssmenu.css('position', 'fixed');
-resizeFix = function() {
-  var mediasize = 1000;
-     if ($( window ).width() > mediasize) {
-       cssmenu.find('ul').show();
-     }
-     if ($(window).width() <= mediasize) {
-       cssmenu.find('ul').hide().removeClass('open');
-     }
-   };
-   resizeFix();
-   return $(window).on('resize', resizeFix);
- });
-  };
-})(jQuery);
 
-(function($){
-$(document).ready(function(){
-$("#cssmenu").menumaker({
-   format: "multitoggle"
-});
-});
-})(jQuery);
-
-</script>
+<script type="text/javascript"s src="menu.js"></script>
 
 </body>
 </html>

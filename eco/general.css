@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 *{
     margin:0;
     padding:0;
@@ -7,7 +8,7 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Slab', serif;
   background:#b8d6b8;
 }
 
@@ -106,8 +107,6 @@ nav{width:100%;}
     display: inline-block;
 }
 
-/* 872px */
-
 @media only screen and (max-width: 780px) {
 
 .inform{
@@ -147,6 +146,7 @@ footer{
     width: 100%;
     height: 120px;
     background-color: #85a385;
+    bottom: 0;
 }
 
 .foot-m-div{
