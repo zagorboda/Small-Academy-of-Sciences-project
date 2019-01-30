@@ -1,0 +1,84 @@
+
+.inform{
+    margin-top: 200px;
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+
+.inform-col{
+    width: 70%;
+    margin: 25px;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 780px) {
+
+.inform{
+    margin-top: 200px;
+    width: 90%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+
+.inform-col{
+    width: 40%;
+    margin: 15px;
+    display: inline-block;
+}
+}
+
+@media only screen and (max-width: 660px) {
+
+.inform{
+    margin-top: 200px;
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+
+.inform-col{
+    width: 90%;
+    margin: 10px;
+    display: inline-block;
+}
+}
+
+blockquote {
+margin: 0;
+background:#b8d6b8;
+padding: 60px;
+color: #3F484D;
+position: relative;
+font-family: 'Lato', sans-serif;
+text-align: center;
+}
+blockquote:before, blockquote:after {
+font-size: 45px;
+color: #3CA1D9;
+position: absolute;
+height: 3px;
+left: 40px;
+right: 40px;
+line-height: 0.4;
+background: linear-gradient(to right, #3CA1D9 45%, transparent 45%, transparent), linear-gradient(to right, transparent, transparent 55%, #3CA1D9 55%);
+font-family: serif;
+}
+blockquote:before {
+content: "\201C";
+top: 30px;
+}
+blockquote:after {
+content: "\201D";
+bottom: 30px;
+}
+blockquote p {
+font-size: 20px;
+margin-bottom: 10px;
+}
+blockquote cite {
+font-style: normal;
+}
