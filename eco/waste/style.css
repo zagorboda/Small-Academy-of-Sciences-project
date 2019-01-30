@@ -20,6 +20,10 @@
     line-height: 1.9em;
 }
 
+.diagram{
+    width: 50%;
+}
+
 @media only screen and (max-width: 780px) {
 
 .inform{
@@ -34,6 +38,11 @@
     margin: 15px;
     display: inline-block;
 }
+
+.diagram{
+    width: 400px;
+}
+
 }
 
 @media only screen and (max-width: 660px) {
@@ -51,4 +60,10 @@
     margin: 10px;
     display: inline-block;
 }
+
+.diagram{
+    width: 350px;
 }
+
+}
+
