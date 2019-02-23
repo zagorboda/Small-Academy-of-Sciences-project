@@ -1,0 +1,142 @@
+
+.inform{
+    margin-top: 80px;
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+
+.inform-col{
+    width: 70%;
+    margin: 25px;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 780px) {
+
+.inform{
+    margin-top: 200px;
+    width: 90%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+
+.inform-col{
+    width: 80%;
+    margin: 15px;
+    display: inline-block;
+}
+}
+
+@media only screen and (max-width: 660px) {
+
+.inform{
+    margin-top: 200px;
+    width: 90%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+
+.inform-col{
+    width: 90%;
+    margin: 10px;
+    display: inline-block;
+}
+}
+
+/* .container{
+    margin:10px;
+    padding: 5px;
+}
+
+.form-name{
+    width: 45%;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.form-email{
+    float: right;
+    width: 45%; 
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+.form-text{
+    width: 80%;
+
+} */
+
+/* Базові стилі форми */
+form{
+ margin:0 auto;
+ width:65%;
+ box-sizing:border-box;
+ padding:40px;
+ border-radius:5px; 
+ background:#b8d6b8;
+ -webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45); 
+ box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45); 
+}
+
+/* Стилі полів вводу */
+.textbox1{
+ height:50px;
+ width:100%;
+ border-radius:3px;
+ border:rgba(0,0,0,.3) 2px solid;
+ box-sizing:border-box;
+ font-family: 'Open Sans', sans-serif;
+ font-size:18px; 
+ padding:10px;
+ margin-bottom:30px; 
+}
+.message1:focus,
+.textbox1:focus{
+ outline:none;
+ border:rgba(24,149,215,1) 2px solid;
+ color: #0e488c;
+}
+
+/* Стилі текстового поля */
+.message1{
+ background: rgba(255, 255, 255, 0.4); 
+ width:100%;
+ height: 120px;
+ border:rgba(0,0,0,.3) 2px solid;
+ box-sizing:border-box;
+ -moz-border-radius: 3px;
+ font-size:18px;
+ font-family: 'Open Sans', sans-serif;
+ -webkit-border-radius: 3px;
+ border-radius: 3px; 
+ display:block;
+ padding:10px;
+ margin-bottom:30px;
+ overflow:hidden;
+}
+
+/* Базові стилі кнопки */
+.button1{
+ height:50px;
+ width:100%;
+ border-radius:3px;
+ border:rgba(0,0,0,.3) 0px solid;
+ box-sizing:border-box;
+ padding:10px;
+ background:#90c843;
+ color:#FFF;
+ font-family: 'Open Sans', sans-serif; 
+ font-weight:400;
+ font-size: 16pt;
+ transition:background .4s;
+ cursor:pointer;
+}
+
+.button1:hover{
+ background:#80b438;
+}
